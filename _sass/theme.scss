@@ -1,1 +1,53 @@
-@import 'brand';
+@import 'variables';
+@import 'mixins';
+@import 'resets';
+@import 'utilities';
+@import 'typography';
+@import 'colors';
+@import 'navigation';
+@import 'components';
+@import 'footer';
+
+///////////////////////////////////
+// swatches
+///////////////////////////////////
+
+
+.swatch {
+  display: block;
+  height: $grid-padding * 2;
+
+  &.brand-color  { background: $brand-color;  height: $grid-padding * 6;}
+  &.accent-color { background: $accent-color; height: $grid-padding * 6;}
+
+  &.white   { background: $white;   }
+  &.light-1 { background: $light-1; }
+  &.light-2 { background: $light-2; }
+  &.gray    { background: $gray;    }
+  &.dark-gray { background: $dark-gray; }
+  &.dark-1  { background: $dark-1;  }
+  &.dark-2  { background: $dark-2;  }
+  &.black   { background: $black;   }
+
+  &-label {
+    padding: $grid-padding / 2;
+    color: $black;
+    opacity: 0.66666666;
+  }
+
+  &-label--light {
+    padding: $grid-padding / 2;
+    color: $white;
+    opacity: 0.66666666;
+  }
+
+}
+
+
+///////////////////////////////////
+// layout
+///////////////////////////////////
+
+.top {
+  padding-top: 10em;
+}

@@ -1,0 +1,48 @@
+///////////////////////////////////
+// utility classes
+///////////////////////////////////
+
+
+// Screen reader text
+.u-screenreader {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.u-screenreader--ignore {
+  speak: none;
+}
+
+.u-margins_off {
+  margin-top: 0 !important;
+}
+
+///////////////////////////////////
+// transitions
+///////////////////////////////////
+
+
+* {
+  transition:
+    color $timing,
+    background $timing,
+    border $timing,
+    box-shadow $timing,
+    fill $timing,
+    transform $timing;
+}
+
+// reset transition for nested stuff
+a > {
+  em, i,
+  strong, b,
+  g, path {
+    transition: none;
+  }
+}
+
+*:after {
+  transition: all 0.2s ease;
+}

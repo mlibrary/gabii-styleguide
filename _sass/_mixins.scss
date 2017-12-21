@@ -1,0 +1,27 @@
+///////////////////////////////////
+// helper mixins
+///////////////////////////////////
+
+
+@mixin clearfix {
+  *zoom:1;
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+    }
+    &:after {
+      clear:both;
+    }
+  }
+
+///////////////////////////////////
+// typography mixins
+///////////////////////////////////
+@mixin garamond {
+  font-family: "adobe-garamond-pro", Georgia, serif;
+}
+
+@mixin lato {
+  font-family: 'Lato', Helvetica, sans-serif;
+}

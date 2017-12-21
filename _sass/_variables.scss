@@ -1,0 +1,56 @@
+// colors
+$brand-color:   #1b2f43;
+$accent-color:  #b7c7d9;
+
+$white:         #f0f4f5;
+$light-1:       #45586e;
+$light-2:       #e9faff;
+$gray:          #acb0b4;
+$dark-gray:     #9d9d9d;
+$dark-1:        #00051c;
+$dark-2:        #8796a8;
+$black:         #111417;
+
+$link:          #39688f;
+$link-hover:    #1e5667;
+
+$shadow:        rgba($black, 0.33);
+
+$success:       #49AB5D;
+$info:          #2aabd2;
+$warning:       #eb9316;
+$danger:        #c12e2a;
+
+// type sizes
+$alpha:    2rem; // 40px
+$beta:  1.65rem; // 33px
+$gamma: 1.15rem; // 23px
+$delta: 0.95rem; // 19px
+$epsilon: 0.75rem;
+$milli: 0.65rem; // 13px
+
+
+// breakpoints
+$bp--m: 30em;
+$bp--l: 56em;
+
+// border radius
+$radius:     2px;
+
+// reuseable measurements
+$nav-height:         3.45rem;
+
+$stroke-width:       3px;
+$stroke-width--lg:   5px;
+
+$button-padding:     0.325em 1.5em 0.5em;
+$button-padding--xl: 0.7em 1.75em 0.825em;
+$nav-padding:        1rem 0.5rem;
+$field-padding:      0.625em 0.825em;
+
+$section-padding:    2.5rem;
+$grid-padding:       1rem;
+
+
+// transition timing
+$timing: 0.2s ease;
