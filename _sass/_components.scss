@@ -1,0 +1,307 @@
+///////////////////////////////////
+// buttons
+///////////////////////////////////
+
+// buttons
+@mixin button {
+  @include lato;
+  display: inline-block;
+  border-bottom: none;
+  border-radius: $radius;
+  color: $white;
+  background: $brand-color;
+  background-image: linear-gradient(to right, $accent-color 50%, $brand-color 50%);
+  background-position: -100%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  text-shadow: none;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    color: $brand-color;
+    background-position: 0;
+  }
+
+  &:active {
+    box-shadow: inset 0 1px 12px $shadow;
+  }
+
+  &[disabled] {
+    cursor-events: none;
+    // does not pass a11y conrast check
+    background: $gray;
+    color: $black;
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+}
+
+.button,
+.btn-default,
+.btn {
+  @include button;
+  padding: 0.3em 1.625em 0.4em 1.625em;
+  font-size: $delta;
+}
+
+.button--lg,
+.btn-lg {
+  @include button;
+  padding: 0.65em 1.75em 0.75em 1.75em;
+  font-size: $gamma;
+}
+
+.button--sm,
+.btn-sm {
+  @include button;
+  padding: 0.75em 1.75em 0.825em 1.75em;
+  font-size: $milli;
+}
+
+.button--xs,
+.btn-xs {
+  @include button;
+  padding: 0.55em 1.75em .65em 1.75em;
+  font-size: .55rem;
+}
+
+.btn-primary {
+  @include button;
+  color: $brand-color;
+  background: $accent-color;
+  background-image: linear-gradient(to right, $brand-color 50%, $accent-color 50%);
+  background-position: -100%;
+  background-size: 200%;
+
+    &:hover, &:focus, &:active {
+      color: $white;
+      background-position: 0;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 12px $shadow;
+    }
+}
+
+.btn-success {
+  @include button;
+  color: $brand-color;
+  background: #5cb85c;
+  background-image: linear-gradient(to right, $success 50%, #5cb85c 50%);
+  background-position: -100%;
+  background-size: 200%;
+
+    &:hover, &:focus, &:active {
+      color: $white;
+      background-position: 0;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 12px $shadow;
+    }
+
+
+}
+
+.btn-info {
+  @include button;
+  color: $brand-color;
+  background: #5bc0de;
+  background-image: linear-gradient(to right, $info 50%, #5bc0de 50%);
+  background-position: -100%;
+  background-size: 200%;
+
+    &:hover, &:focus, &:active {
+      color: $white;
+      background-position: 0;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 12px $shadow;
+    }
+
+
+}
+
+.btn-warning {
+  @include button;
+  color: $brand-color;
+  background: #f0ad4e;
+  background-image: linear-gradient(to right, $warning 50%, #f0ad4e 50%);
+  background-position: -100%;
+  background-size: 200%;
+
+    &:hover, &:focus, &:active {
+      color: $white;
+      background-position: 0;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 12px $shadow;
+    }
+
+
+}
+
+.btn-danger {
+  @include button;
+  color: $brand-color;
+  background: #d9534f;
+  background-image: linear-gradient(to right, $danger 50%, #d9534f 50%);
+  background-position: -100%;
+  background-size: 200%;
+
+    &:hover, &:focus, &:active {
+      color: $white;
+      background-position: 0;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 12px $shadow;
+    }
+
+
+}
+
+///////////////////////////////////
+// panels
+///////////////////////////////////
+.panel {
+  border-radius: 2px;
+}
+
+.panel-title {
+  font-size: $delta;
+}
+
+.panel-heading {
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+.panel-default {
+  border-color: $brand-color;
+
+  .panel-heading {
+    color: $white;
+    background-color: $brand-color;
+    border-color: $brand-color;
+    background-image: none;
+  }
+
+  .panel-content {
+    background-color: $white;
+  }
+
+}
+
+.panel-primary {
+  border-color: $accent-color;
+
+  .panel-heading {
+    color: $brand-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    background-image: none;
+  }
+
+  .panel-content {
+    background-color: $white;
+  }
+
+}
+
+.panel-success {
+  .panel-heading {
+    color: $brand-color;
+    background-color: $success;
+    background-image: none;
+    border-color: #5cb85c;
+  }
+}
+
+.panel-info {
+  .panel-heading {
+    color: $brand-color;
+    background-color: $info;
+    background-image: none;
+  }
+}
+
+.panel-warning {
+  .panel-heading {
+    color: $brand-color;
+    background-color: $warning;
+    background-image: none;
+  }
+}
+
+.panel-danger {
+  .panel-heading {
+    color: $white;
+    background-color: $danger;
+    background-image: none;
+  }
+}
+
+///////////////////////////////////
+// labels
+///////////////////////////////////
+.label {
+  border-radius: .1em;
+}
+
+.label-default {
+  background-color: $brand-color;
+}
+
+.label-primary {
+  background-color: $accent-color;
+  color: $brand-color;
+}
+
+.label-success {
+  background-color: $success;
+  color: $brand-color;
+}
+
+.label-info {
+  background-color: $info;
+  color: $brand-color;
+}
+
+.label-warning {
+  background-color: $warning;
+  color: $brand-color;
+}
+
+.label-danger {
+  background-color: $danger;
+}
+///////////////////////////////////
+// alerts
+///////////////////////////////////
+.alert {
+  border-radius: 2px;
+  font-size: $delta;
+}
+.alert-success,
+.alert-info,
+.alert-warning,
+.alert-danger {
+  background-image: none;
+}
+
+///////////////////////////////////
+// wells
+///////////////////////////////////
+.well {
+  border-radius: 2px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 300;
+  background-image: none;
+}

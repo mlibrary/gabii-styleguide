@@ -1,0 +1,29 @@
+///////////////////////////////////
+// fields
+///////////////////////////////////
+
+
+input[type='text'], textarea {
+  width: 100%;
+  padding: $field-padding;
+  background: $light-1;
+  border: none;
+}
+
+textarea {
+  min-height: $grid-padding * 8;
+  max-height: $grid-padding * 24;
+}
+
+label {
+  top: 10px; // bring label closer to field without messing up vertical rhythm
+}
+
+form .button {
+  margin-top: $grid-padding / 2; // space out the submit button
+}
+
+// style placeholder text -- not super well supported, but hey
+::placeholder {
+  color: $gray;
+}

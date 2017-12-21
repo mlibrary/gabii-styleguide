@@ -1,0 +1,88 @@
+///////////////////////////////////
+// nav
+///////////////////////////////////
+
+.navbar-default,
+footer {
+  background: $brand-color;
+  color: $accent-color;
+  @include lato;
+}
+
+.navbar-default {
+  height: 4em;
+  border-bottom: 0 solid transparent;
+
+  .navbar-brand {
+    color: $white;
+    height: auto;
+    @include lato;
+    font-size: $gamma;
+    padding: 10px;
+
+    img {
+      height: 35px;
+    }
+
+  }
+
+  .navbar-brand.title {
+    padding-top: .8em;
+    padding-left: 1em;
+  }
+
+  .navbar-brand {
+    border-bottom: 0 solid transparent;
+  }
+
+  .navbar-brand:hover {
+    color: $accent-color;
+    border-bottom: 0 solid transparent;
+  }
+
+  .navbar-nav>li>a {
+    color: $accent-color;
+    border-bottom: none;
+    font-size: 14px;
+  }
+
+  .navbar-nav>li>a.current {
+      color: #fff;
+  }
+
+  .navbar-nav>li.a11y {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+  }
+
+  .navbar-nav>li>a.toggle-a11y {
+      padding-top: 5px;
+      font-size: 10px;
+      cursor: pointer;
+  }
+
+  .navbar-nav>li>a.toggle-a11y.on::after {
+      content: " ON";
+  }
+
+  .dropdown-menu>li>a {
+      border-bottom: 0;
+  }
+
+}
+
+.toc {
+  margin-top: 4em;
+
+}
+
+.logos {
+  margin-top: 6em;
+  margin-bottom: 5em;
+
+  img {
+      max-height: 120px;
+      margin: 0 auto;
+  }
+}

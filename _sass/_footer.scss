@@ -1,0 +1,38 @@
+footer {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  margin-top: 3em;
+
+  a {
+    color: $accent-color;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: $accent-color;
+  }
+
+  p,
+  ul,
+  li {
+    font-size: $epsilon;
+    color: $accent-color;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  p.title {
+      font-size: $delta;
+      font-weight: strong;
+      color: $white;
+  }
+
+  .logos {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
