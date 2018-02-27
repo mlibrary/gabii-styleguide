@@ -95,6 +95,13 @@ blockquote,
   margin-bottom: 0.8em;
 }
 
+.toc ol {
+  @include lato;
+  li, em {
+    @include lato;
+  }
+}
+
 small,
 .milli {
   font-size: $milli;

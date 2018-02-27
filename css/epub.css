@@ -2,121 +2,64 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/Lato-Bold.ttf); }
+  src: url(../fonts/Lato-Bold.ttf); }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: url(fonts/Lato-BoldItalic.ttf); }
+  src: url(../fonts/Lato-BoldItalic.ttf); }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/Lato-Regular.ttf); }
+  src: url(../fonts/Lato-Regular.ttf); }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(fonts/Lato-Italic.ttf); }
+  src: url(../fonts/Lato-Italic.ttf); }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(fonts/Lato-Light.ttf); }
+  src: url(../fonts/Lato-Light.ttf); }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
-  src: url(fonts/Lato-LightItalic.ttf); }
+  src: url(../fonts/Lato-LightItalic.ttf); }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(fonts/Lato-Italic.ttf); }
+  src: url(../fonts/Lato-Italic.ttf); }
 @font-face {
   font-family: "adobe-garamond-pro";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/AGaramondPro-Regular.otf); }
+  src: url(../fonts/AGaramondPro-Regular.otf); }
 @font-face {
   font-family: "adobe-garamond-pro";
   font-style: italic;
   font-weight: 300;
-  src: url(fonts/AGaramondPro-Italic.otf); }
+  src: url(../fonts/AGaramondPro-Italic.otf); }
 @font-face {
   font-family: "adobe-garamond-pro";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/AGaramondPro-Bold.otf); }
+  src: url(../fonts/AGaramondPro-Bold.otf); }
 @font-face {
   font-family: "adobe-garamond-pro";
   font-style: italic;
   font-weight: 700;
-  src: url(fonts/AGaramondPro-BoldItalic.otf); }
+  src: url(../fonts/AGaramondPro-BoldItalic.otf); }
 h1, h2, h3, h4, h5, h6,
 p {
   margin: 0;
   padding: 0; }
 
-img,
-textarea,
-svg {
-  max-width: 100%; }
-
-img {
-  display: block; }
-
-svg {
-  overflow: visible; }
-
-html {
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-body * {
-  position: relative; }
-
-html, body {
-  overflow-x: hidden;
-  width: 100%; }
-
 a {
   text-decoration: none; }
-
-label {
-  display: inline-block; }
-
-input[type=checkbox],
-input[type=radio] {
-  vertical-align: middle; }
-
-input[type=submit],
-input[type=radio],
-input[type=checkbox],
-button,
-label {
-  cursor: pointer; }
-
-button,
-.btn {
-  overflow: visible;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  display: block;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-  button::-moz-focus-inner,
-  .btn::-moz-focus-inner {
-    padding: 0;
-    border: 0; }
-
-button, input[type=button] {
-  border: none; }
 
 .u-screenreader {
   clip: rect(1px, 1px, 1px, 1px);
@@ -231,6 +174,11 @@ blockquote,
   line-height: 1.6em;
   margin-bottom: 0.8em; }
 
+.toc ol {
+  font-family: 'Lato', Helvetica, sans-serif; }
+  .toc ol li, .toc ol em {
+    font-family: 'Lato', Helvetica, sans-serif; }
+
 small,
 .milli {
   font-size: 0.65rem;
@@ -312,9 +260,11 @@ a {
     text-decoration: none; }
 
 a.unity {
-  border-bottom-style: dotted; }
+  border-bottom-style: dotted;
+  cursor: pointer; }
   a.unity:hover, a.unity:focus, a.unity:active {
-    border-bottom-style: solid; }
+    border-bottom-style: solid;
+    cursor: pointer; }
 
 *:focus {
   outline: 0;
