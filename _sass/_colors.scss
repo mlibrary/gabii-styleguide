@@ -43,9 +43,11 @@ a {
 
 a.unity {
   border-bottom-style: dotted;
+  cursor: pointer;
 
   &:hover, &:focus, &:active {
     border-bottom-style: solid;
+    cursor: pointer;
   }
 }
 
